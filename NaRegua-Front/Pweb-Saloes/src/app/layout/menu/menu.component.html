@@ -1,0 +1,22 @@
+<div class="button-container">
+  <button color="sucesso" mat-raised-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button [routerLink]="['cadastrosalao']" mat-menu-item>Cadastrar Salao</button>
+    <button [routerLink]="['listagemsaloes']" mat-menu-item>Listar Saloes</button>
+    <button [routerLink]="['listagemsaloestabela']" mat-menu-item>Listar Saloes Tabela</button>
+
+  </mat-menu>
+  <div class="">
+    <button mat-raised-button class="btn-primary">Login</button>
+    <button mat-raised-button class="btn-primary">Registrar</button>
+  </div>
+</div>
+
+<div class="text-center">
+  <h1>Bem vindo ao NáRegua</h1>
+</div>
+
+<div class="imagem_principal">
+</div>
+
+

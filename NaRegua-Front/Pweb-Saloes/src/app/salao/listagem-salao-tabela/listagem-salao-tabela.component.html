@@ -1,0 +1,46 @@
+<mat-form-field>
+  <mat-label>Filtro</mat-label>
+  <input matInput placeholder="filtre por qualquer campo" (keyup)="filtrar(inputFiltro.value)" #inputFiltro>
+</mat-form-field>
+<!--<button class="button-especcial" mat-flat-button color="primary" (click)="listagem()">Filtro especial</button>-->
+
+<!--<button mat-icon-button (click)="listagem()" aria-label="Filtro especial">-->
+<!--  <mat-icon>find_in_page</mat-icon>-->
+<!--</button>-->
+
+<mat-table [dataSource]="dataSource">
+  <mat-header-row *matHeaderRowDef="mostrarColunas"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: mostrarColunas;"></mat-row>
+
+    <ng-container matColumnDef="nome">
+      <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.nome}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="endereco">
+      <mat-header-cell *matHeaderCellDef>Endereço</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.endereco}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="dono">
+      <mat-header-cell *matHeaderCellDef>Dono</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.dono}}</mat-cell>
+    </ng-container>
+  <ng-container matColumnDef="funcionarios">
+    <mat-header-cell *matHeaderCellDef>Funcionarios</mat-header-cell>
+    <mat-cell *matCellDef="let item">{{item.funcionarios}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="acoes">
+    <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <button mat-icon-button (click)="editar(item)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="apagar(item.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+</mat-table>

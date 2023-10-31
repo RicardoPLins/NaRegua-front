@@ -1,0 +1,25 @@
+.card-usuario {
+  background-color: brown;
+  color: white;
+  width: 300px;
+  margin: 10px;
+}
+.white-icon {
+  color: white;
+}
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card-list > * {
+  box-sizing: border-box;
+}
+.card-list > *:not(:last-child) {
+  margin-right: 32px;
+}
+/* Item sizing */
+.card-listItem {
+  flex: 0 1 calc(33.3% - 32px);
+}

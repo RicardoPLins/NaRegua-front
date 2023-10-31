@@ -1,0 +1,50 @@
+.menu {
+  background-color: #191919;
+}
+
+.mat-vermelho {
+  background-color: #FF0000;
+}
+
+.mat-sucesso {
+  background-color: #ecf3f3  !important;
+  border-color: aliceblue;
+  margin-right: auto;
+}
+.mat-info{
+  background-color: lightgreen;
+  border-color: gray;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+}
+
+.btn-primary {
+  background-color: #ecf3f3 !important;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+  background-color: #191919;
+  color: #ecf3f3;
+}
+
+.imagem_principal{
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/img/CAPA.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+footer {
+  background-color: #282828;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+

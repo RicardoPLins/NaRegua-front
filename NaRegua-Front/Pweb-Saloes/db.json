@@ -1,0 +1,17 @@
+{
+  "saloes": [
+    {
+      "nome": "salao2",
+      "endereco": "av1",
+      "dono": "daniw",
+      "id": 2
+    },
+    {
+      "nome": "t2",
+      "endereco": "t1",
+      "dono": "1",
+      "id": 3
+    }
+  ],
+  "mensagem": []
+}
